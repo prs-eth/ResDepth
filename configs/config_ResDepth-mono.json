@@ -1,0 +1,47 @@
+{
+  "datasets": [
+    {
+      "name": "my_dataset",
+      "raster_gt": "path/to/ground_truth_DSM.tif",
+      "raster_in": "path/to/initial_DSM.tif",
+      "path_image_list": "path/to/imagelist.txt",
+      "path_pairlist_training": "path/to/pairlist_mono.txt",
+      "path_pairlist_validation": "path/to/pairlist_mono.txt",
+      "area_type": "train+val",
+      "allocation_strategy": "5-crossval_vertical",
+      "test_stripe": 1,
+      "n_training_samples": 20000,
+      "crossval_training": false	  
+    }
+    ],
+  "model": {
+    "input_channels": "geom-mono"
+  },
+  "training_settings": {
+    "tile_size": 256,
+    "augment": true,
+    "batch_size": 20,
+    "n_epochs": 2000,
+    "loss": "L1"
+  },
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": 0.0002
+  },
+  "scheduler": {
+    "name": "StepLR",
+    "enabled": true,
+    "settings": {
+      "step_size": 200
+    }
+  },
+  "general": {
+    "save_model_rate": 20,
+    "evaluate_rate": 1
+  },
+  "output": {
+    "suffix": "ResDepth-mono",
+    "output_directory": "path/to/output_directory",
+    "tboard_log_dir": "path/to/tboard_log_directory"
+  }
+}
