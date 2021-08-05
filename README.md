@@ -534,7 +534,7 @@ To refine the initial DSM using the generalized ResDepth-stereo prior, use the t
 
 The refined DSMs will be stored in ```./demo/results/ResDepth-stereo/``` and <nobr>```./demo/results/ResDepth-stereo_generalized/```</nobr>.
 For visualization, you can use Python visualization packages or off-the-shelf DSM visualization software such as 
-[QTReader](https://appliedimagery.com/download/) or [planlauf/TERRAIN](https://planlaufterrain.com/).
+[Quick Terrain Reader](https://appliedimagery.com/download/) or [planlauf/TERRAIN](https://planlaufterrain.com/).
 
 As reference, ```./demo/results_expected/``` stores the expected results.
 
