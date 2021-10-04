@@ -484,6 +484,12 @@ def prepare_dataset_configuration(cfg, phase):
             if 'mask_forest' not in cfg_dataloader:
                 cfg_dataloader.mask_forest = None
 
+            # Required if test.py is run on training/validation area (area_type == 'train' or area_type == 'val')
+            if 'area_defn_train' in dataset:
+                cfg_dataloader.area_defn = dataset['area_defn_train']
+            if 'area_defn_val' in dataset:
+                cfg_dataloader.area_defn = dataset['area_defn_val']
+
             cfg_list.append(cfg_dataloader)
 
     else:
