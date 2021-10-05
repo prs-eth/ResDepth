@@ -428,12 +428,12 @@ def get_trainer(cfg, trainloader, valloader, model, optimizer, scheduler, criter
         # Find the previous training log file and copy it to the new experiments output folder
         log_file = experiment_directory / 'training.log'
         if fdutil.file_exists(log_file):
-            shutil.copy(log_file, config.checkpoint_dir)
+            shutil.copy(log_file, config.log_file)
 
         # Copy the best model weights so far
         path_model = Path(config.pretrained_path).parents[0] / 'Model_best.pth'
         if fdutil.file_exists(path_model):
-            shutil.copy(path_model, config.log_file)
+            shutil.copy(path_model, config.checkpoint_dir)
 
     else:
         config.pretrained_path = None
