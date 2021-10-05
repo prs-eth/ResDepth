@@ -433,7 +433,7 @@ def get_trainer(cfg, trainloader, valloader, model, optimizer, scheduler, criter
         # Copy the best model weights so far
         path_model = Path(config.pretrained_path).parents[0] / 'Model_best.pth'
         if fdutil.file_exists(path_model):
-            shutil.copy(path_model, config.checkpoint_dir)
+            shutil.copy(path_model, Path(config.checkpoint_dir) / 'Model_best.pth')
 
     else:
         config.pretrained_path = None
