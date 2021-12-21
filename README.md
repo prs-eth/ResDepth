@@ -5,7 +5,7 @@
 This repository provides the code to train and evaluate ResDepth, an efficient and easy-to-use neural architecture for 
 learned DSM refinement from satellite imagery. It represents the official implementation of the paper:
 
-### [ResDepth: A Deep Residual Prior For 3D Reconstruction From High-resolution Satellite Images](https://arxiv.org/abs/2106.08107)
+### [ResDepth: A Deep Residual Prior For 3D Reconstruction From High-resolution Satellite Images](https://doi.org/10.1016/j.isprsjprs.2021.11.009)
 *[Corinne Stucker](https://prs.igp.ethz.ch/content/specialinterest/baug/institute-igp/photogrammetry-and-remote-sensing/en/group/people/person-detail.html?persid=179102), 
 [Konrad Schindler](https://prs.igp.ethz.ch/group/people/person-detail.schindler.html)*
 
