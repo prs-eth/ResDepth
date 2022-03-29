@@ -546,15 +546,17 @@ Preview of the results:
 If you run into any problems or have questions, please contact [Corinne Stucker](mailto:corinne.stucker@geod.baug.ethz.ch).
 
 
-### Citations
+## Citations
 
 If you find this code or work helpful, please cite:
 ```
-@article{stucker2021resdepth,
-  title={ResDepth: A Deep Prior For 3D Reconstruction From High-resolution Satellite Images},
-  author={Stucker, Corinne and Schindler, Konrad},
-  journal={arXiv preprint arXiv:2106.08107},
-  year={2021}
+@article{stucker2022resdepth,
+title = {ResDepth: A deep residual prior for 3D reconstruction from high-resolution satellite images},
+author = {Stucker, Corinne and Schindler, Konrad},
+journal = {ISPRS Journal of Photogrammetry and Remote Sensing},
+volume = {183},
+pages = {560-580},
+year = {2022}
 }
 ```
 
