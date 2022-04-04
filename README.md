@@ -551,11 +551,11 @@ If you run into any problems or have questions, please contact [Corinne Stucker]
 If you find this code or work helpful, please cite:
 ```
 @article{stucker2022resdepth,
-title = {ResDepth: A deep residual prior for 3D reconstruction from high-resolution satellite images},
+title = {{ResDepth}: A deep residual prior for 3D reconstruction from high-resolution satellite images},
 author = {Stucker, Corinne and Schindler, Konrad},
 journal = {ISPRS Journal of Photogrammetry and Remote Sensing},
 volume = {183},
-pages = {560-580},
+pages = {560--580},
 year = {2022}
 }
 ```
