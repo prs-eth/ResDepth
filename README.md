@@ -348,7 +348,7 @@ Similarly, for ResDepth-0, specify:
 ```
 
 Lastly, we also provide the option to train a U-Net variant that directly regresses a DSM from an ortho-rectified stereo
-pair [[1](#myfootnote1)]:
+pair[^1]:
 ```json
   "model": {
     "input_channels": "stereo",
@@ -561,4 +561,4 @@ year = {2022}
 ```
 
 
-<a name="myfootnote1">[1]</a>: C. Stucker, K. Schindler, ResDepth: Learned residual stereo reconstruction, in: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2020, pp. 707-716.
+[^1]: C. Stucker, K. Schindler, ResDepth: Learned residual stereo reconstruction, in: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2020, pp. 707-716.
